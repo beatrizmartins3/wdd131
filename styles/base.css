@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+header span{
+    display: block;
+    text-align: center;
+    background-color: #3a2d32;
+    padding: 20px;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #dbb4ad;
+    padding: 10px 40px; 
+}
+
+nav a{
+    text-decoration: none;
+    color: #000;
+    font-family: 'Cabin', sans-serif;
+}
+h1{
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+nav a:hover{
+    text-decoration: overline;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 2fr 1fr ;
+    grid-template-rows: 1fr 1fr ;
+    column-gap: 0.5rem;
+}
+
+
+#my-picture{
+    width: 5rem;
+    margin-top: 5rem;
+    float: right;
+    padding-right: 5rem;
+}
+
+#brazil {
+    float: left;
+    width: 10rem;
+    margin-top: 3rem;
+    margin-left: 3rem;
+}
+.card2{
+    grid-column: 2;
+    grid-row: 1;
+}
+section{
+    border: 1px solid #3a2d32;
+    padding: 0px;
+    border-radius: 10px;
+    height: 175%;
+    margin: 20px;
+}
+h2{
+    text-align: center;
+    background-color: #a2ad91;
+    border: 1px solid #a2ad91;
+    border-radius: 10px;
+    margin-bottom: 0;
+    padding:2px;
+    margin-top: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+section p{
+    font-family: 'Cabin', sans-serif;
+}
+.country p{
+    height: 5rem;
+    padding-right: 3rem;
+    text-align: right;
+
+}
+.about-me p{
+    padding: 50px;
+    text-align: center;
+}
+h3{
+    text-align: center;
+    font-family: 'Cabin', sans-serif;
+}
+
+footer{
+    text-align: center;
+    background-color: #3a2d32;
+    color: #fff;
+    padding: 5rem;
+}
