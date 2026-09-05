@@ -1,12 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 
 header span{
     display: block;
-    text-align: center;
     background-color: #3a2d32;
     padding: 20px;
     color: #fff;
     font-family: 'Playfair Display', serif;
+}
+
+header{
+    text-align: center;
 }
 
 nav{
@@ -98,4 +101,7 @@ footer{
 }
 li{
     padding-bottom: 20px;
+}
+main{
+    background-color: #f5f5f5;
 }
