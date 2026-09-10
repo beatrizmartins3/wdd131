@@ -1,0 +1,72 @@
+header,footer{
+    background-color: #8B0000;
+    color: #fff;
+}
+
+
+h1,h2{
+    font-family: 'Playfair Display', serif;
+}
+
+nav,footer{
+    font-family: 'Cabin', sans-serif;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px solid #e5e7eb;
+    padding: 1rem;
+}
+img{
+    width: 270px;
+}
+h1,footer,figcaption{
+    text-align: center;
+}
+
+footer{
+    padding: 1rem;
+}
+
+.nav-menu,h2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+h2{
+    margin: 0;
+}
+
+.nav-list a{
+    color: #fff;
+    text-decoration: none;
+}
+nav a:hover{
+    color: #ebe70a;
+}
+button{
+    background-color: #8B0000;
+    color: #fff;
+    border: 1px solid #8B0000;
+    cursor: pointer;
+}
+.hamburguer{
+    display: block;
+}
+.nav-list{
+    display: none;
+    list-style: none;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+
+}
+.nav-list.active{
+    display: flex;
+}

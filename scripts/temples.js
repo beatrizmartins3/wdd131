@@ -1,3 +1,18 @@
+const hamburguer=document.querySelector('.hamburguer');
+const navMenu=document.querySelector('.nav-list')
+
+hamburguer.addEventListener('click',()=>{
+    navMenu.classList.toggle('active');
+
+    if (navMenu.classList.contains('active')){
+        hamburguer.innerHTML='✕';
+
+    } else {
+        hamburguer.innerHTML='☰';
+    }
+
+});
+
 
 const currentYear=new Date().getFullYear();
 document.getElementById("currentyear").textContent=currentYear;
