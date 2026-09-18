@@ -1,7 +1,8 @@
-header,footer{
-    background-color: #06402b;
-    color: #fff;
-    padding: 1rem;
+
+:root{
+    --background-color: #06402b;
+    --color: #fff;
+    --padding: 1rem;
 }
 
 main{
@@ -29,6 +30,12 @@ h1,h2{
     width: 100%;
     object-fit:cover;
     margin-top: 5px;
+}
+
+header,footer{
+    background-color: var(--background-color);
+    color: var(--color);
+    padding: var(--padding);
 }
 
 footer{
