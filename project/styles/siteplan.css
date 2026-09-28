@@ -1,0 +1,28 @@
+.hf{
+    background-color:#2b124c ;
+    color: #ffffff;
+}
+.content-bgc{
+    background-color: #1a1f5a;
+    color: #ffffff;
+}
+.text-color{
+    background-color: #000;
+    color: #ffffff;
+}
+div{
+    width: 80px;
+    padding: 1rem;
+}
+.cabin{
+    font-family: 'Cabin', sans-serif;
+}
+.playfair{
+    font-family: 'Playfair Display', serif;
+}
+img{
+    width: 500px;
+}
+main{
+    margin: 50px;
+}
