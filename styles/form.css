@@ -10,7 +10,7 @@
     cursor: pointer;
 }
 
-label span{
+label span,.point{
     color: #0000ff;
 }
 
