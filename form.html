@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Page</title>
     <meta name="description" content="WDD 131 – Dynamic Web Fundamentals – Beatriz Martins - 
     Web form page">
+    <title>Product Review</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
@@ -22,39 +22,38 @@
         <form action="review.html" method="get">
             <label for="products">Product Name <span>*</span></label><br>
             <select name="products" id="products" required>
-                <option value="">Select a Product ...</option>
+                <option value="" disabled selected>Select a Product ...</option>
             </select><br>
             <!--Overall rating-->
                 <label for="rating">Overall Rating <span>*</span></label>
-                <div class="rating" >
+                <div id="rating" >
                     <div class="item">
                         <label for="star1">☆</label>
                         <input type="radio" id="star1" name="rating" value="1" required>
                     </div>
                     <div class="item">
                         <label for="star2">☆☆</label>
-                        <input type="radio" id="star2" name="rating" value="2">
+                        <input type="radio" id="star2" name="rating" value="2" required>
                     </div>
                     <div class="item">
                         <label for="star3">☆☆☆</label>
-                        <input type="radio" id="star3" name="rating" value="3">
+                        <input type="radio" id="star3" name="rating" value="3" required>
                     </div>
                     <div class="item">
                         <label for="star4">☆☆☆☆</label>
-                        <input type="radio" id="star4" name="rating" value="4">
+                        <input type="radio" id="star4" name="rating" value="4" required>
                     </div>   
                     <div class="item">
                         <label for="star5">☆☆☆☆☆</label>
-                        <input type="radio" id="star5" name="rating" value="5">
+                        <input type="radio" id="star5" name="rating" value="5" required>
                     </div>
               </div><br>
             <!--Date of installation-->
                 <label for="date">Date of Installation <span>*</span> </label><br>
                 <input type="date" id="date" name="date" required><br>
             <!--Features checkbox-->
-                <label for="features">Which features did you find useful in the product?</label>
-                <legend><i>(Check all that apply)</i></legend>
-                <ul id="features">
+                <p>Which features did you find useful in the product?</p><span><i>(Check all that apply)</i></span>
+                <ul>
                     <li> 
                         <input type="checkbox" id="check1" name="check1" value="check1">
                         <label for="check1">Durability</label>
