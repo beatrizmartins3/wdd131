@@ -1,0 +1,20 @@
+@media screen and (min-width: 768px){
+    #products,#date,#user-name{
+        width: 200px;
+    }
+    #text{
+        width: 300px;
+    }
+    #buttom{
+        width: 100px;
+        border-radius: 2px;
+        background-color: #8bc34a;
+    }
+    .container{
+      border: 2px solid #7a687f;
+      margin: 50px;
+      background-color: #503a57;
+      font-family: 'Cabin',sans-serif;
+      color: #fff;
+    }
+}

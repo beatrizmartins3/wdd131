@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals – Beatriz Martins - 
+    Web form page">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <meta name="author" content="Beatriz Martins">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <script defer src="scripts/form.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form action="review.html" method="get">
+            <label for="products">Product Name <span>*</span></label><br>
+            <select name="products" id="products" required>
+                <option value="">Select a Product ...</option>
+            </select><br>
+            <!--Overall rating-->
+                <label for="rating">Overall Rating <span>*</span></label>
+                <div class="rating" >
+                    <div class="item">
+                        <label for="star1">☆</label>
+                        <input type="radio" id="star1" name="rating" value="1" required>
+                    </div>
+                    <div class="item">
+                        <label for="star2">☆☆</label>
+                        <input type="radio" id="star2" name="rating" value="2">
+                    </div>
+                    <div class="item">
+                        <label for="star3">☆☆☆</label>
+                        <input type="radio" id="star3" name="rating" value="3">
+                    </div>
+                    <div class="item">
+                        <label for="star4">☆☆☆☆</label>
+                        <input type="radio" id="star4" name="rating" value="4">
+                    </div>   
+                    <div class="item">
+                        <label for="star5">☆☆☆☆☆</label>
+                        <input type="radio" id="star5" name="rating" value="5">
+                    </div>
+              </div><br>
+            <!--Date of installation-->
+                <label for="date">Date of Installation <span>*</span> </label><br>
+                <input type="date" id="date" name="date" required><br>
+            <!--Features checkbox-->
+                <label for="features">Which features did you find useful in the product?</label>
+                <legend><i>(Check all that apply)</i></legend>
+                <ul id="features">
+                    <li> 
+                        <input type="checkbox" id="check1" name="check1" value="check1">
+                        <label for="check1">Durability</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="check2" name="check2" value="check2">
+                        <label for="check2">Ease of Use</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="check3" name="check3" value="check3">
+                        <label for="check3">Performance</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="check4" name="check4" value="check4">
+                        <label for="check4">Design</label>
+                    </li>
+                </ul><br>       
+                    
+            <!--Written review-->
+                <label for="text">Written Review <span>(Optional)</span></label>
+                <textarea  id="text" name="area"> </textarea><br>
+            <!--User name-->
+                <label for="user-name">Your name <span>(Optional)</span></label>
+                <input type="text" id="user-name" name="user"><br>
+            <!--Submit buttom-->
+                <input id="buttom" type="submit" value="Post Review">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Beatriz Martins - Brazil</p>
+        <p>Last Modified: <span id="lastmodified"></span></p>
+    </footer>
+</body>
+</html>
