@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <meta name="description" content="WDD 131 – Temple Album – Beatriz Martins - Page about the concept of soulmate ">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <meta name="author" content="Beatriz Martins">
+    <link rel="stylesheet" href="styles/soulmate.css">
+    <link rel="stylesheet" href="styles/soulmate-large.css">
+    <script defer src="scripts/index.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Feedback</h1>
+        <nav class="nav-menu">
+            <button class="hamburguer" aria-label="Open menu">☰</button>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="greek-philosophy.html">Greek Philosophy</a></li>
+                <li><a href="spiritual-life.html">Spiritual Life</a></li>
+                <li><a href="beyond-the-romance.html">Beyond the Romance</a></li>
+                <li><a href="form.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="review.html" method="get">
+
+            <p>Overall Rating <span class="point">*</span></p>
+                <div id="rating" >
+                    <div class="item">
+                        <label for="star1">☆</label>
+                        <input type="radio" id="star1" name="rating" value="1" required>
+                    </div>
+                    <div class="item">
+                        <label for="star2">☆☆</label>
+                        <input type="radio" id="star2" name="rating" value="2" required>
+                    </div>
+                    <div class="item">
+                        <label for="star3">☆☆☆</label>
+                        <input type="radio" id="star3" name="rating" value="3" required>
+                    </div>
+                    <div class="item">
+                        <label for="star4">☆☆☆☆</label>
+                        <input type="radio" id="star4" name="rating" value="4" required>
+                    </div>   
+                    <div class="item">
+                        <label for="star5">☆☆☆☆☆</label>
+                        <input type="radio" id="star5" name="rating" value="5" required>
+                    </div>
+              </div><br>
+
+               <label for="types">Choose the type of soulmate that you think more interesting </label><br>
+               <select name="types" id="types" >
+                <option value="" disabled selected>Select a Type ...</option>
+               </select><br>
+
+              <label for="text">Written Opinion <span>(Optional)</span></label>
+                <textarea  id="text" name="area"> </textarea><br>
+
+                <input id="buttom" type="submit" value="Post Opinion">
+        </form>
+           
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Beatriz Martins - Brazil</p>
+        <p>Last Modified: <span id="lastmodified"></span></p>
+    </footer>
+</body>
+</html>
